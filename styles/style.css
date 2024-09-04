@@ -1,0 +1,49 @@
+/* FONT IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+body {
+    background-color: rgb(26, 18, 31);
+}
+
+h1 {
+    color: aliceblue;
+    font-weight: 700;
+    
+}
+
+.h2 {
+    text-transform: lowercase;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+a:hover {
+    color: rgb(75, 185, 148);
+}
+
+img {
+    width: 100%;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+.container-main-text {
+    padding: 100px;
+}
+
+.main-text {
+    color:rgba(240, 248, 255, 0.824);
+    letter-spacing: 1px;
+}
