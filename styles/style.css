@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-    color: rgb(75, 185, 148);
+    color: rgb(163, 141, 172);
 }
 
 img {
@@ -100,15 +100,26 @@ img {
     margin-top: -60px;
 }
 
-.container-main {
-    padding: 100px;
+.container-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+    padding: 300px 200px;
 }
 
-.container-main h1 {
+.container-about h1 {
     color:rgb(6, 4, 8)
 }
 
-.main-text {
+.about-text {
     color:rgba(21, 22, 22, 0.824);
     letter-spacing: 1px;
+    padding: 10px;
 }
+
+.about-me {
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+
