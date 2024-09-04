@@ -17,27 +17,28 @@ html, body {
 
 h1 {
     color: aliceblue;
-    font-size: 7rem;
+    font-size: 6rem;
     
 }
 
-.h2 {
+h2 {
     text-transform: lowercase;
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 2px;
+    color: black;
 }
 
 a {
     text-decoration: none;
     transition: all 0.4s ease;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 3px;
     color: white;
 }
 
 a:hover {
-    color: rgb(163, 141, 172);
+    color: rgb(149, 116, 162);
 }
 
 img {
@@ -58,7 +59,7 @@ img {
 .nav-links {
     text-transform: uppercase;
     font-family:'Courier New', Courier, monospace;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #hero {
@@ -86,16 +87,17 @@ img {
     color: white;
     width: 40%;
     height: auto;
-    position: absolute; /* Position it absolutely within the hero-img */
-    top: 40%; /* Position from the top */
-    left: 50%; /* Position from the left */
-    transform: translate(-50%, -50%); /* Offset the top/left by 50% to center */
-    text-align: center; /* Center text inside the div */
+    position: absolute; 
+    top: 40%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
 }
 
 .hero-body {
-    font-size: 27px;
-    font-family: "Lora";
+    font-size: 22px;
+    line-height: 37px;
+    font-family: 'Lora';
     color: rgb(187, 182, 192);
     margin-top: -60px;
 }
@@ -108,18 +110,30 @@ img {
 }
 
 .container-about h1 {
-    color:rgb(6, 4, 8)
+    color:rgb(6, 4, 8);
+    line-height: 12px;
 }
 
 .about-text {
     color:rgba(21, 22, 22, 0.824);
     letter-spacing: 1px;
-    padding: 10px;
 }
 
 .about-me {
     padding: 10px;
     letter-spacing: 1px;
+}
+
+.about-points {
+    padding: 10px;
+}
+
+.about-skills {
+    border-left: 5px solid #685176;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    padding-left: 30px;
 }
 
 
