@@ -1,13 +1,23 @@
 /* FONT IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-body {
-    background-color: rgb(26, 18, 31);
+
+html, body {
+    background-color: rgb(6, 4, 8);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
+
+/* taustaväri liila: rgb(84,57,101)*/
 
 h1 {
     color: aliceblue;
-    font-weight: 700;
+    font-size: 7rem;
     
 }
 
@@ -23,6 +33,7 @@ a {
     transition: all 0.4s ease;
     font-weight: 400;
     letter-spacing: 3px;
+    color: white;
 }
 
 a:hover {
@@ -33,17 +44,71 @@ img {
     width: 100%;
 }
 
-.nav-item {
-    text-transform: uppercase;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 12px;
+.nav-list {
+    height: 40px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-left: 55%;
+
 }
 
-.container-main-text {
+.nav-links {
+    text-transform: uppercase;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/intropic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: azure;
+}
+
+.hero-text {
+    color: white;
+    width: 40%;
+    height: auto;
+    position: absolute; /* Position it absolutely within the hero-img */
+    top: 40%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Offset the top/left by 50% to center */
+    text-align: center; /* Center text inside the div */
+}
+
+.hero-body {
+    font-size: 27px;
+    font-family: "Lora";
+    color: rgb(187, 182, 192);
+    margin-top: -60px;
+}
+
+.container-main {
     padding: 100px;
 }
 
+.container-main h1 {
+    color:rgb(6, 4, 8)
+}
+
 .main-text {
-    color:rgba(240, 248, 255, 0.824);
+    color:rgba(21, 22, 22, 0.824);
     letter-spacing: 1px;
 }
