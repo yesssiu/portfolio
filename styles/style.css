@@ -104,10 +104,10 @@ img {
     background-color: azure;
 }
 
-.container-about {
+.about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 150px;
     padding: 300px 140px;
 }
 
@@ -158,9 +158,36 @@ img {
     background-color: #977aa9;
 }
 
+#experience {
+    width: 100%;
+    height: 100vh;
+    background-color: #b2a3bb;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 150px;
+    padding: 300px 140px;
+}
+
+.experience h1 {
+    line-height: 20px;
+    text-align: left;
+}
 
 
 
+/* --- F O O T E R --- */
 
-/* --- K O K E M U S --- */
+footer {
+    height: 60px;
+    color: azure;
+    padding: 100px 200px;
+}
 
+#footer {
+    font-family: 'Lora';
+    text-transform: none;
+    letter-spacing: 1px;
+}
