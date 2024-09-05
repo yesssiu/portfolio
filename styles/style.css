@@ -355,7 +355,17 @@ img {
 /* Styling for project divs */
 .contact-1, .contact-2, .contact-3 {
     padding: 20px;
-    background-color: #d0c8d6;
+    background-color: #ffffff;
+}
+
+.circle-1, .circle-2, .circle-3 {
+    padding: 30px;
+}
+
+.contact-img {
+    border-radius: 100%;
+    width: 200px;
+    align-items: center;
 }
 
 /* --- F O O T E R --- */
