@@ -113,7 +113,7 @@ img {
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 180px; /* Adjust grid gap as needed */
+    grid-gap: 200px; /* Adjust grid gap as needed */
     width: 100%;
     max-width: 100%;
     padding: 200px; /* Reduced padding to avoid pushing content */
@@ -129,7 +129,7 @@ img {
 }
 
 .about-me h1 {
-    color:rgb(6, 4, 8);
+    color: #b2a3bb;
     line-height: 12px;
 }
 
@@ -146,12 +146,13 @@ img {
     color:rgba(21, 22, 22, 0.824);
 }
 
+/* --- M I N I L O G O T --- */
 .logo {
     width: 50px;
     padding: 20px;
 }
 
-
+/* --- E X P E R I E N C E --- */
 #experience {
     width: 100%;
     height: 110vh;
@@ -165,7 +166,7 @@ img {
 .experience {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 180px; /* Adjust grid gap as needed */
+    grid-gap: 200px; /* Adjust grid gap as needed */
     width: 100%;
     max-width: 100%;
     padding: 200px; /* Reduced padding to avoid pushing content */
@@ -251,6 +252,111 @@ img {
     color: #333;
 }
 
+/* --- P R O J E C T S --- */
+#projects {
+    width: 100%;
+    height: 110vh; /* Adjust the height to fit your content */
+    background-color: #ffffff; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    padding: 0; /* Remove padding */
+}
+
+/* Grid container for the project content */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr; /* One column for the title */
+    width: 100%;
+    max-width: 100%; /* Ensure a maximum width */
+    padding: 200px; /* Adjust padding for spacing */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 13px;
+    line-height: 27px;
+    font-family: 'Lora'; /* Font family */
+}
+
+/* Title styling */
+.projects-title {
+    grid-column: span 1; /* Ensure title takes up full width of one column */
+    text-align: center; /* Center title text */
+    margin-bottom: 50px; /* Space below the title */
+}
+
+.projects-title h1 {
+    color: #b2a3bb;
+}
+
+/* Flex container for project content */
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 100px; /* Space between columns */
+    width: 100%;
+}
+
+.projects-content h2 {
+    text-align: center;
+}
+
+/* Styling for project divs */
+.project-1, .project-2, .project-3 {
+    padding: 20px;
+    background-color: #d0c8d6;
+}
+
+/* --- C O N T A C T --- */
+#contact {
+    width: 100%;
+    height: 110vh; /* Adjust the height to fit your content */
+    background-color: #ffffff; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    padding: 0; /* Remove padding */
+}
+
+/* Grid container for the project content */
+.contact {
+    display: grid;
+    grid-template-columns: 1fr; /* One column for the title */
+    width: 100%;
+    max-width: 100%; /* Ensure a maximum width */
+    padding: 200px; /* Adjust padding for spacing */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 13px;
+    line-height: 27px;
+    font-family: 'Lora'; /* Font family */
+}
+
+/* Title styling */
+.contact-title {
+    grid-column: span 1; /* Ensure title takes up full width of one column */
+    text-align: center; /* Center title text */
+    margin-bottom: 50px; /* Space below the title */
+}
+
+.contact-title h1 {
+    color: #b2a3bb;
+}
+
+/* Flex container for project content */
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 100px; /* Space between columns */
+    width: 100%;
+}
+
+.contact-content h2 {
+    text-align: center;
+}
+
+/* Styling for project divs */
+.contact-1, .contact-2, .contact-3 {
+    padding: 20px;
+    background-color: #d0c8d6;
+}
 
 /* --- F O O T E R --- */
 
