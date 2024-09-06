@@ -305,6 +305,42 @@ img {
     background-color: #d0c8d6;
 }
 
+/* STUFF */
+#hero {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/intropic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-text {
+    color: white;
+    width: 40%;
+    height: auto;
+    position: absolute; 
+    top: 40%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+}
+
+.hero-body {
+    font-size: 22px;
+    line-height: 37px;
+    font-family: 'Lora';
+    color: rgb(187, 182, 192);
+    margin-top: -60px;
+}
+
+
 /* --- C O N T A C T --- */
 #contact {
     width: 100%;
@@ -360,12 +396,15 @@ img {
 
 .circle-1, .circle-2, .circle-3 {
     padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
 
 .contact-img {
     border-radius: 100%;
     width: 200px;
-    align-items: center;
 }
 
 /* --- F O O T E R --- */
