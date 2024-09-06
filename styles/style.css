@@ -45,23 +45,56 @@ img {
 }
 
 /* --- N A V I G A A T I O --- */
-.nav-list {
-    height: 40px;
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    margin: 0 auto;
-    padding: 3px;
 
+.sticky-header {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Stick to the top */
+    z-index: 100; /* Ensure it's above other content */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.sticky-header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sticky-header ul {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 35%;
+    background-color: rgb(6, 4, 8);
+}
+
+.sticky-header li {
+    margin-right: 30px;
+}
+
+.sticky-header li:last-child {
+    margin-right: 0; /* Remove extra margin after the last item */
 }
 
 .nav-links {
     text-transform: uppercase;
-    font-family:'Lora', Courier, monospace;
+    font-family: 'Lora', Courier, monospace;
     font-size: 12px;
+    text-decoration: none; /* Remove underline */
+    color: #f5f5f5; /* Color for the links */
 }
+
+
 
 /* --- H E R O --- */
 #hero {
