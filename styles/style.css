@@ -52,14 +52,15 @@ img {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    margin-left: 55%;
+    margin: 0 auto;
+    padding: 3px;
 
 }
 
 .nav-links {
     text-transform: uppercase;
     font-family:'Lora', Courier, monospace;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* --- H E R O --- */
@@ -87,6 +88,7 @@ img {
     left: 50%; 
     transform: translate(-50%, -50%); 
     text-align: center; 
+    z-index: 1; /* Ensure the text is above other elements */
 }
 
 .hero-body {
@@ -95,7 +97,33 @@ img {
     font-family: 'Lora';
     color: rgb(187, 182, 192);
     margin-top: -60px;
+    position: relative;
 }
+
+.hero-body::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 400px;
+    position: absolute;
+    bottom: 20px; /* Space below the text */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.136);
+    z-index: 0; /* Place it behind the images and text */
+}
+
+.hero-icons {
+    display: block; 
+    margin-top: 10px;
+}
+
+.hero-links {
+    max-width: 30px; /* Set a consistent size for the icons */
+    padding: 0 15px;
+}
+
+
 
 /* --- A B O U T  M E --- */
 /* About section container */
@@ -285,7 +313,7 @@ img {
     grid-template-columns: 1fr; /* One column for the title */
     width: 100%;
     max-width: 100%; /* Ensure a maximum width */
-    padding: 200px; /* Adjust padding for spacing */
+    padding: 300px 250px; /* Adjust padding for spacing */
     box-sizing: border-box; /* Include padding in width */
     font-size: 13px;
     line-height: 27px;
@@ -307,18 +335,44 @@ img {
 .projects-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 100px; /* Space between columns */
+    grid-gap: 40px; /* Space between columns */
     width: 100%;
 }
 
 .projects-content h2 {
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
 }
 
 /* Styling for project divs */
 .project-1, .project-2, .project-3 {
     padding: 20px;
-    background-color: #d0c8d6;
+    background-color: #e1dae7;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.projects-img {
+    display: flex;
+    width:100%;
+}
+
+.project-text {
+    text-align: justify;
+    font-family: 'Lora';
+    letter-spacing: 1px;
+    color:rgba(21, 22, 22, 0.824);
+    padding: 5px 0;
+}
+.read-more {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 2px 10px;
+    text-align: center;
+    color: black;
+    border-radius: 3px;
 }
 
 /* STUFF */
