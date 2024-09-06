@@ -10,6 +10,7 @@ html, body {
     width: 100%;
     height: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    scroll-behavior: smooth;
 }
 
 /* taustaväri liila: rgb(84,57,101)*/
@@ -512,6 +513,12 @@ img {
 
 
 /* --- F O O T E R --- */
+
+#footer {
+    width: 100%;
+    height: 100vh; /* Adjust the height to fit your content */
+}
+
 .footer-text {
     color: white;
     width: 40%;
