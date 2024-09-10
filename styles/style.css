@@ -333,7 +333,7 @@ img {
 /* --- P R O J E C T S --- */
 #projects {
     width: 100%;
-    height: 110vh; /* Adjust the height to fit your content */
+    height: 100vh; /* Adjust the height to fit your content */
     background-color: #ffffff; /* Background color */
     display: flex;
     justify-content: center;
@@ -368,8 +368,10 @@ img {
 /* Flex container for project content */
 .projects-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 40px; /* Space between columns */
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px; /* Space between columns */
     width: 100%;
 }
 
@@ -377,11 +379,12 @@ img {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 /* Styling for project divs */
-.project-1, .project-2, .project-3 {
+.project-1, .project-2, .project-3, .project-4 {
+    width: 300px;
     padding: 20px;
     background-color: #e1dae7;
     text-align: center;
@@ -398,6 +401,8 @@ img {
 .project-text {
     text-align: justify;
     font-family: 'Lora';
+    font-size: 11px;
+    line-height: 20px;
     letter-spacing: 1px;
     color:rgba(21, 22, 22, 0.824);
     padding: 5px 0;
@@ -409,6 +414,7 @@ img {
     text-align: center;
     color: black;
     border-radius: 3px;
+    box-shadow: 2px 3px 8px #29292956;
 }
 
 /* STUFF */
