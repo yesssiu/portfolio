@@ -191,8 +191,8 @@ img {
 
 /* About grid */
 .about {
+    max-width: 1200px;
     display: flex;
-    justify-content: space-between; /* Space between items */
     align-items: flex-start; /* Align items at the top */
     flex-direction: column;
     flex-wrap: wrap; /* Allow wrapping if needed */
@@ -258,13 +258,14 @@ img {
 }
 
 .experience {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 200px; /* Adjust grid gap as needed */
-    width: 100%;
-    max-width: 100%;
-    padding: 200px; /* Reduced padding to avoid pushing content */
-    box-sizing: border-box; /* Ensure padding is included within width */
+    max-width: 1200px;
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    flex-direction: column;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    padding: 50px; /* Reduced padding to avoid pushing content */
+    box-sizing: border-box;
+    margin: 15%;
     font-size: 13px;
     line-height: 27px;
     font-family: 'Lora';
