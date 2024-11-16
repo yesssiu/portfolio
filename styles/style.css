@@ -1,6 +1,7 @@
 /* FONT IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mate:ital@0;1&family=Space+Grotesk:wght@300..700&display=swap');
 
 @font-face {
     font-family: 'Proxima Nova Regular';
@@ -24,9 +25,9 @@ html, body {
     height: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     scroll-behavior: smooth;
-    font-size: 17px;
-    line-height: 31px;
-    font-family: 'Lora';
+    font-size: 18px;
+    line-height: 35px;
+    font-family: 'DM Sans';
 }
 
 /* taustaväri liila: rgb(84,57,101)*/
@@ -34,6 +35,7 @@ html, body {
 h1 {
     color: white;
     font-size: 5rem;
+    font-family: 'Lora';
 }
 
 h2 {
@@ -245,69 +247,148 @@ img {
 /* About section container */
 #about {
     width: 100%;
-    height: 105vh;
+    min-height: 100vh auto;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
-    align-items: center; /* Center vertically */
-    padding: 0; /* Remove unnecessary padding */
+    padding: 50px 20px;
+    box-sizing: border-box;
+
 }
 
 /* About grid */
 .about {
+    width: 100%;
     max-width: 1200px;
-    display: flex;
-    align-items: flex-start; /* Align items at the top */
-    flex-direction: column;
-    flex-wrap: wrap; /* Allow wrapping if needed */
-    gap: 20px; /* Space between items */
-    padding: 50px; /* Adjust spacing */
     box-sizing: border-box;
-    margin: 15%;
+    margin-top: 80px;
+    margin-bottom: 140px;
+}
+
+.about-title {
+    text-align: center;
+}
+
+.about-title h1 {
+    color: rgb(39, 19, 41);
+    padding-bottom: 60px;
+}
+
+.about-content {
+    max-width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0 auto;
 }
 
 .about-me {
-    flex: 2;
-    max-width: 100%;
-    padding: 10px;
+    flex: 0 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    padding: 15px;
+    box-sizing: border-box;
+    align-content: center;
+    height: 100%;
+    margin-bottom: 70px;
+}
+
+.about-me h2 {
+    padding-bottom: 5px;
+}
+
+.cat-img {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.cat-img img {
+    border-radius: 100%;
+    box-shadow: 3px 7px 12px #806e87;
+    width: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cat-img .catimg-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    height: 20px;
+    background-color: rgba(128, 110, 135, 0.592);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.cat-img:hover {
+    top: 0;
+}
+
+.cat-img:hover img {
+    transform: scale(1.1);
 }
 
 .about-me h1 {
     color: rgb(39, 19, 41);
+    text-align: center; /* Center title text */
 }
+
+
 
 
 
 
 
 /* --- E X P E R I E N C E --- */
-#experience {
+#skills {
     width: 100%;
-    height: 105vh;
+    height: 100vh auto;
     background-color: #b2a3bb;
     display: flex;
     justify-content: center;
     align-items: center; /* Center vertically */
-    padding: 0; /* Remove unnecessary padding */
-}
-
-.experience {
-    max-width: 1200px;
-    display: flex;
-    align-items: flex-start; /* Align items at the top */
-    flex-direction: column;
-    flex-wrap: wrap; /* Allow wrapping if needed */
-    gap: 20px; /* Space between items */
-    padding: 50px; /* Adjust spacing */
     box-sizing: border-box;
-    margin: 15%;
+    padding: 50px 20px; /* Remove unnecessary padding */
 }
 
-.experience h1 {
-    line-height: 20px;
-    text-align: left;
+.skills {
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    box-sizing: border-box;
+    margin-top: 80px;
+    margin-bottom: 140px;
 }
 
+.skills-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.skills-content {
+    text-align: center;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.skills-content .skills-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 800px;
+    width: 100%;
+    padding-left: 90px;
+
+}
 
 /* --- M I N I L O G O T --- */
 .skill-images {
@@ -315,32 +396,36 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .image-container {
-    text-align: center;
-    max-width: 100px;
+    max-width: 100%;
 }
 
 .skill-images .logo {
-    width: 50px;
-    padding: 0 25px 0px 25px;
+    width: 70px;
+    padding: 0 30px 0px 30px;
     transition: all 0.2s linear;
 }
 
 .skill-images .logo:hover {
     transform: scale(1.3);
     filter: hue-rotate(90deg);
+    filter: drop-shadow(rgba(39, 19, 41, 0.377) 2px 6px 5px );
 }
 
 .image-container p {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 17px;
     color: rgb(0, 0, 0);
     font-family: 'Proxima Nova Light';
+    text-align: center;
 }
 
+.image-container img {
+    filter: drop-shadow(rgba(39, 19, 41, 0.377) 2px 6px 5px );
+}
 
 
 /* --- P R O J E C T S --- */
@@ -354,12 +439,11 @@ img {
     box-sizing: border-box;
 }
 
-/* Grid container for the project content */
+/* container for the project content */
 .projects {
     width: 100%;
     max-width: 1200px; /* Ensure a maximum width */
     box-sizing: border-box; /* Include padding in width */
-    font-family: 'Lora'; /* Font family */
     margin-top: 80px;
     margin-bottom: 140px;
 }
@@ -402,10 +486,16 @@ img {
 .projects-img {
     width:100%;
     height: auto;
+    transition: all 0.2s linear;
+}
+
+.projects-img:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(20deg);
 }
 
 .project-text {
-    text-align: justify;
+    text-align: center;
     letter-spacing: 0px;
     padding: 5px 0;
 }
@@ -547,3 +637,6 @@ img {
     height: 20px;
     top: 50px;
 }
+
+
+
