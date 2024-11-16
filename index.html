@@ -14,6 +14,9 @@
     <header class="sticky-header">
         <nav>
             <ul id="nav-list">
+                <li>
+                    <img src="./images/JL_logo_small.png" class="nav-logo">
+                </li>
                 <li><a class="nav-links" href="#hero">Etusivu</a></li>
                 <li><a class="nav-links" href="#about">Minusta</a></li>
                 <li><a class="nav-links" href="#skills">Kokemus</a></li>
@@ -46,11 +49,12 @@
             </div>
             <div class="about-content">
                 <div class="about-me">
-                    <h2>väliotsikko</h2>
+                    <h3>Hei, hauska tutustua!</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper enim in elit placerat venenatis.
-                        Curabitur nec vehicula erat, vel ullamcorper ante. Maecenas ullamcorper euismod lectus, a maximus ipsum
-                        auctor a. Morbi dignissim diam a commodo tincidunt. Ut vitae tristique neque. 
+                        Olen Jessica, tällä hetkellä Turussa asustava motivoitunut ohjelmistokehittäjä, joka nauttii itsensä haastamisesta ja uuden oppimisesta. Sydämeni on sykkinyt erityisesti Front-End -koodaamiselle jo teinistä saakka.
+                    </p>
+                    <p>
+                        Vapaa-ajallani harrastan videopelien pelaamista, viherkasvien ahkeraa hoivaamista, lukemista sekä kissani kanssa ulkoilemista. 
                     </p>
                 </div>
                 <div class="about-me">
@@ -71,8 +75,7 @@
             <div class="skills-content">
                 <div class="skills-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec vehicula erat, vel ullamcorper ante. Maecenas ullamcorper euismod lectus, a maximus ipsum
-                        auctor a. 
+                        Suurimman osan Front-End -taidoistani olen opiskellut itsenäisesti kiinnostuttuani teininä nettisivujen luomisesta. Vuonna 2022 lähtin opiskelemaan Tietojenkäsittelyn Tradenomiksi Turun Ammattikorkeakoulussa, josta valmistun vuoden 2025 talvella. Intohimoni on kehittyä vahvaksi Full-Stack -osaajaksi sekä jatkaa uuden aktiivista oppimista ja itseni haastamista.  
                     </p>
                 </div>
                 <div class="skill-images">
@@ -185,10 +188,32 @@
 
     <section id="footer">
         <div class="hero-img">
-            <div class="footer-text">
-                <h2>kiinnostuitko?</h2>
-                <h1>ota yhteyttä!</h1>
-                <p class="footer-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum luctus malesuada. Donec id orci sollicitudin enim scelerisque tempus sed nec nulla. Nulla finibus varius est quis aliquam. </p>
+            <div class="footer">
+                <div class="footer-title">
+                    <h2>kiinnostuitko?</h2>
+                    <h1>Ota yhteyttä!</h1>
+                </div>
+                <div class="footer-content"></div>
+                    <div class="form">
+                        <form action="/submit" method="post">
+                            <div class="sender">
+                                <label>Nimi</label>
+                                <input type="text" name="name" placeholder="Nimesi">
+                            </div>
+                            <div class="email">
+                                <label>Sähköpostiosoite</label>
+                                <input type="email" name="email" placeholder="Sähköpostisi">
+                            </div>
+                            <div class="message">
+                                <label>Viesti</label>
+                                <textarea name="message" placeholder="Viesti"></textarea>
+                            </div>
+                            <div class="submit">
+                                <button type="submit">Lähetä</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

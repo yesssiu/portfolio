@@ -40,7 +40,7 @@ h1 {
 
 h2 {
     font-family: 'Lora', Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 33px;
     letter-spacing: -1px;
     color: #805392;
     line-height: 10px;
@@ -62,10 +62,13 @@ img {
     width: 100%;
 }
 
+
+
+
 .button-62 {
-    background: linear-gradient(to bottom right, #805392, #9f86a3);
+    background: linear-gradient(to bottom right, #805392, rgb(197, 172, 200));
     border: 0;
-    border-radius: 12px;
+    border-radius: 17px;
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
@@ -86,21 +89,14 @@ img {
 
 .button-62:not([disabled]):focus {
     color: white;
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem hsla(283, 28%, 45%, 0.5), .125rem .125rem 1rem rgba(159, 134, 163, 0.5);
+    box-shadow: 0 0 .23rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem hsla(283, 28%, 45%, 0.5), .125rem .125rem 1rem rgba(197, 172, 200, 0.5);
 }
 
 .button-62:not([disabled]):hover {
     color: white;
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem hsla(283, 28%, 45%, 0.5), .125rem .125rem 1rem rgba(159, 134, 163, 0.5);
+    box-shadow: 0 0 .23rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem hsla(283, 28%, 45%, 0.5), .125rem .125rem 1rem rgba(197, 172, 200, 0.5);
 }
 
-/*
-.button:hover {
-    background-color: rgb(128, 83, 146);
-    color: white;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-} */
 
 /* --- N A V I G A A T I O --- */
 
@@ -129,7 +125,6 @@ img {
 .sticky-header ul {
     height: 80px;
     display: flex;
-    gap: 20px;
     width: 100% auto;
     list-style: none;
     justify-content: center;
@@ -148,10 +143,10 @@ img {
 }
 
 .nav-links {
-    text-transform: uppercase;
-    font-family: 'Proxima Nova Light', Courier, monospace;
-    font-size: 17px;
-    letter-spacing: -0.2px;
+    text-transform: none;
+    font-family: 'Lora', Courier, monospace;
+    font-size: 18px;
+    letter-spacing: 0px;
     text-decoration: none; /* Remove underline */
     color: #f5f5f5; /* Color for the links */
 }
@@ -160,6 +155,13 @@ img {
     color: rgb(128, 83, 146);
     transform: scale(1.2);
     transition: transform 0.2s ease-in-out;
+}
+
+.nav-logo {
+    max-width: 55px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin-right: 180px;
 }
 
 
@@ -232,8 +234,8 @@ img {
 .hero-text .hero-icons .hero-links {
     display: 1;
     margin-top: 10px;
-    max-width: 40px;
-    padding: 0 15px;
+    max-width: 50px;
+    padding: 0 25px;
     transition: all 0.3s linear;
 }
 
@@ -275,10 +277,10 @@ img {
 }
 
 .about-content {
-    max-width: 1050px;
+    max-width: 1100px;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 10px;
     margin: 0 auto;
 }
 
@@ -293,7 +295,7 @@ img {
 }
 
 .about-me h2 {
-    padding-bottom: 5px;
+    padding: 30px 0 20px 0;
 }
 
 .cat-img {
@@ -303,6 +305,7 @@ img {
     justify-content: center;
     overflow: hidden;
     padding: 30px;
+    margin-left: 40px;
 }
 
 .cat-img img {
@@ -384,9 +387,9 @@ img {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
-    padding-left: 90px;
+    padding-left: 40px;
 
 }
 
@@ -609,6 +612,9 @@ img {
 #footer {
     width: 100%;
     height: 100vh; /* Adjust the height to fit your content */
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 #footer .hero-img {
@@ -619,24 +625,91 @@ img {
     padding: 50px; /* Adjust padding for spacing */
 }
 
-.footer-text {
+.footer {
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    margin-bottom: 140px;
+}
+
+.footer-title {
+    text-align: center;
+}
+
+.footer-title h1 {
+    padding-bottom: 60px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.form {
+    margin-top: 30px;
     color: white;
-    width: 40%;
-    height: auto;
-    position: absolute; 
-    top: 40%;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    z-index: 1; /* Ensure the text is above other elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer-text h2 {
-    font-size: 17px;
-    color: #b2a3bb;
-    height: 20px;
-    top: 50px;
+.form form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+.form form .sender,
+.form form .email,
+.form form .message,
+.form form .submit {
+    display: flex;
+    flex-direction: column;
+}
 
+.form form label {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #f4f4f4;
+    text-align: left;
+}
+
+.form form input[type="text"],
+.form form input[type="email"],
+.form form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form form textarea {
+    min-height: 200px;
+}
+
+.form form input[type="text"]:focus,
+.form form input[type="email"]:focus,
+.form form textarea:focus {
+    border-color: #007bff; /* Highlight color on focus */
+    outline: none;
+}
+
+.form form .submit button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #805392;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
