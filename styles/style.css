@@ -1,8 +1,10 @@
-/* FONT IMPORTS */
+/* ==================== FONT IMPORTS ==================== */
+/* Importing font families from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mate:ital@0;1&family=Space+Grotesk:wght@300..700&display=swap');
 
+/* Defining custom font faces for Proxima Nova */
 @font-face {
     font-family: 'Proxima Nova Regular';
     src: url('../fonts/proximanova_regular.ttf') format('opentype');
@@ -17,6 +19,7 @@
 }
 
 
+/* ==================== GLOBAL STYLES ==================== */
 html, body {
     background-color: rgb(6, 4, 8);
     margin: 0;
@@ -25,16 +28,23 @@ html, body {
     height: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     scroll-behavior: smooth;
-    font-size: 18px;
+    box-sizing: border-box;
+    font-size: 17px;
     line-height: 35px;
     font-family: 'DM Sans';
 }
 
-/* taustaväri liila: rgb(84,57,101)*/
+/* Header styles */
+header {
+    height: 90px;
+    position: relative;
+    overflow: visible;
+}
 
+/* Heading styles */
 h1 {
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'Lora';
 }
 
@@ -46,6 +56,7 @@ h2 {
     line-height: 10px;
 }
 
+/* Anchor tag styles */
 a {
     text-decoration: none;
     transition: all 0.4s ease;
@@ -58,13 +69,14 @@ a:hover {
     color: #805392;
 }
 
+/* Image styling */
 img {
     width: 100%;
 }
 
 
 
-
+/* ==================== BUTTON STYLES ==================== */
 .button-62 {
     background: linear-gradient(to bottom right, #805392, rgb(197, 172, 200));
     border: 0;
@@ -98,8 +110,7 @@ img {
 }
 
 
-/* --- N A V I G A A T I O --- */
-
+/* ==================== NAVIGATION STYLES ==================== */
 .sticky-header {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
@@ -166,7 +177,8 @@ img {
 
 
 
-/* --- H E R O --- */
+
+/* ==================== HERO SECTION ==================== */
 #hero {
     width: 100%;
     height: 100vh;
@@ -178,11 +190,12 @@ img {
 
 .hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/intropic.jpg");
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 110%;
 }
 
 .hero {
@@ -243,11 +256,10 @@ img {
 
 
 
-/* --- A B O U T  M E --- */
-/* About section container */
+/* ==================== ABOUT SECTION ==================== */
 #about {
     width: 100%;
-    min-height: 100vh auto;
+    min-height: 100vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -261,6 +273,8 @@ img {
     width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
     margin-top: 80px;
     margin-bottom: 140px;
 }
@@ -270,6 +284,7 @@ img {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     margin: 0 auto;
     padding-top: 80px;
@@ -278,7 +293,7 @@ img {
 .cat-img {
     flex: 0 1 calc(40% - 20px);
     max-width: calc(40% - 20px);
-    position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -323,7 +338,6 @@ img {
     padding: 5px;
     box-sizing: border-box;
     align-content: center;
-    height: 100%;
     margin-bottom: 70px;
 }
 
@@ -342,13 +356,9 @@ img {
 
 
 
-
-
-
-/* --- E X P E R I E N C E --- */
+/* ==================== EXPERIENCE SECTION ==================== */
 #skills {
     width: 100%;
-    height: 100vh auto;
     background-color: #b2a3bb;
     display: flex;
     justify-content: center;
@@ -386,7 +396,7 @@ img {
 
 }
 
-/* --- M I N I L O G O T --- */
+/* --- M I N I L O G O S --- */
 .skill-images {
     display: flex;
     flex-wrap: wrap;
@@ -424,7 +434,7 @@ img {
 }
 
 
-/* --- P R O J E C T S --- */
+/* ==================== PROJECTS SECTION ==================== */
 #projects {
     width: 100%;
     min-height: 100vh; /* Adjust the height to fit your content */
@@ -497,13 +507,10 @@ img {
 }
 
 
-/* STUFF */
-#middle {
-    width: 100%;
-    height: 600px;
-}
 
-.hero-img {
+
+/* ==================== CONTACT SECTION ==================== */
+#contact .hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/intropic.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -513,27 +520,6 @@ img {
     width: 100%;
 }
 
-.hero-text {
-    color: white;
-    width: 40%;
-    height: auto;
-    position: absolute; 
-    top: 40%;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-}
-
-.hero-body {
-    font-size: 22px;
-    line-height: 37px;
-    font-family: 'Lora';
-    color: rgb(187, 182, 192);
-    margin-top: -60px;
-}
-
-
-/* --- C O N T A C T --- */
 #contact {
     width: 100%;
     height: 110vh; /* Adjust the height to fit your content */
@@ -580,74 +566,20 @@ img {
     text-align: center;
 }
 
-/* Styling for project divs */
-.contact-1, .contact-2, .contact-3 {
-    padding: 20px;
-    background-color: #ffffff;
-}
 
-.circle-1, .circle-2, .circle-3 {
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-}
-
-.contact-img {
-    border-radius: 100%;
-    width: 200px;
-}
-
-
-/* --- C O N T A C T --- */
-
-#contact {
-    width: 100%;
-    height: 100vh; /* Adjust the height to fit your content */
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    margin-bottom: 100px;
-}
-
-.hero-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px; /* Adjust padding for spacing */
-}
-
-.contact {
-    width: 100%;
-    max-width: 1200px;
-    box-sizing: border-box;
-    margin-top: 80px;
-    margin-bottom: 140px;
-}
-
-.contact-title {
-    text-align: center;
-}
-
-.contact-title h1 {
-    padding-bottom: 60px;
-}
-
-.contact-content {
-    max-width: 1100px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
+/* Form styling */
 .form {
     margin-top: 30px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.form #status {
+    margin-bottom: 20px;
+    color: #b2a3bb;
+    font-size: 16px;
 }
 
 .form form {
@@ -707,13 +639,14 @@ img {
     transition: background-color 0.3s ease;
 }
 
-/* --- F O O T E R --- */
 
+
+/* ==================== FOOTER  ==================== */
 #footer {
     font-family: 'Lora';
     color: white;
     font-size: 20px;
-    height: 60px;
+    max-height: 60px;
     margin: 50px;
     box-sizing: border-box;
     display: flex;
@@ -732,5 +665,255 @@ img {
 }
 
 
+/* ==================== RESPONSIVITY SECTION ==================== */
+/* --- MOBILE --- */
+@media only screen and (max-width: 768px) {
+
+    /* Hero Section */
+
+    .hero .hero-title h1 {
+        font-size: 4rem; 
+    }
+    .hero .hero-title h3 {
+        padding-bottom: 60px;
+    }
+
+    .hero .hero-content p {
+        font-size: 18px; 
+    }
+
+    .sticky-header nav {
+        padding: 0 10px;
+    }
+    
+    /* About Section */
+    .about .about-content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .cat-img {
+        flex: 0 1 100%;
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    .cat-img img {
+        max-width: 280px;
+    }
+    
+    .about-me {
+        flex: 0 1 100%;
+        max-width: 100%;
+        padding: 0px;
+    }
+
+    .about-me h1 {
+        font-size: 2rem; 
+    }
+
+
+    /* Skills Section */
+    .skills-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-text {
+        max-width: 100%;
+        padding-left: 20px;
+    }
+
+    /* Projects Section */
+    .projects-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project {
+        flex: 0 1 100%; 
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .projects-img:hover {
+        transform: scale(1); 
+    }
+
+
+    /* Contact Section */
+    .contact {
+        padding: 50px;
+    }
+
+    .contact-title h1 {
+        font-size: 3rem;
+        line-height: 100%;
+        padding-bottom: 0px;
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 10px;
+    }
+
+    .form form {
+        padding: 20px;
+        width: 100%;
+    }
+
+
+}
+
+/* --- MOBILE --- */
+@media only screen and (max-width: 890px) {
+
+    /* Hero Section */
+
+    .hero .hero-title h1 {
+        font-size: 4rem; 
+    }
+    .hero .hero-content p {
+        font-size: 18px; 
+    }
+
+    .sticky-header nav {
+        padding: 0 10px;
+    }
+    
+    /* About Section */
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .cat-img {
+        flex: 0 1 100%;
+        max-width: 100%;
+        padding: 20px;
+        padding: 30px;
+    }
+
+    .cat-img img {
+        max-width: 300px;
+    }
+    
+    .about-me {
+        flex: 0 1 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .about-me h1 {
+        font-size: 2rem; 
+    }
+
+    /* Skills Section */
+    .skills-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-text {
+        max-width: 100%;
+        padding-left: 20px;
+    }
+
+    /* Projects Section */
+    .projects-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project {
+        flex: 0 1 100%; 
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .projects-img:hover {
+        transform: scale(1); 
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 50px;
+    }
+
+    .contact-title h1 {
+        font-size: 3rem;
+        line-height: 100%;
+        padding-bottom: 0px;
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 10px;
+    }
+
+    .form form {
+        padding: 20px;
+        width: 100%;
+    }
+
+
+}
+
+/* --- TABLET --- */
+@media only screen and (max-width: 1124px) {
+
+    /* Hero Section */
+    #hero .hero-title h1 {
+        font-size: 9rem;
+    }
+
+    /* About Section */
+    .cat-img {
+        flex: 0 1 50%;
+        max-width: 70%;
+        padding: 20px;
+    }
+
+    .cat-img img {
+        max-width: 280px;
+        margin: 10px;
+    }
+
+    .about-me {
+        flex: 0 1 50%;
+        max-width: 60%;
+    }
+
+    /* Projects Section */
+    .project {
+        flex: 0 1 calc(50% - 20px); /* Two columns */
+    }
+
+    .project img {
+        max-width: 450px;
+    }
+
+    /* Skills Section */
+    .skills-text {
+        max-width: 80%;
+        padding-left: 30px;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .contact-title h1 {
+        font-size: 3rem;
+        line-height: 100%;
+        padding-bottom: 0px;
+    }
+}
 
 

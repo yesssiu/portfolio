@@ -15,16 +15,24 @@
 
 <body>
     <header class="sticky-header">
-        <nav>
-            <ul id="nav-list">
-                <li><img src="./images/JL_logo_small.png" class="nav-logo"></a></li>
-                <li><a class="nav-links" href="#hero">Etusivu</a></li>
-                <li><a class="nav-links" href="#about">Minusta</a></li>
-                <li><a class="nav-links" href="#skills">Työkalut</a></li>
-                <li><a class="nav-links" href="#projects">Projektit</a></li>
-                <li><a class="nav-links" href="#contact">Ota yhteyttä!</a></li>
-            </ul>
-        </nav>
+        <div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#hero" class="nav-links">Etusivu</a></li>
+                    <li><a href="#about" class="nav-links">Minusta</a></li>
+                    <li><a href="#skills" class="nav-links">Työkalut</a></li>
+                    <li><a href="#projetcs" class="nav-links">Projektit</a></li>
+                    <li><a href="#contact" class="nav-links">Ota yhteyttä!</a></li>
+                </ul>
+                <!-- Burger Menu Icon -->
+                <div id="burger-menu" class="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    
     </header>
 
     <section id="hero">
@@ -37,8 +45,8 @@
             </div>
             <div class="hero-content">
                 <div class="hero-icons">
-                    <a href="https://www.linkedin.com/in/jessica-laamanen-109328170"><img src="./images/linkedin2.png" class="hero-links" alt="LinkedIn" target="_blank"></a>
-                    <a href="https://github.com/yesssiu"><img src="./images/github2.png" class="hero-links" alt="GitHub profile" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/jessica-laamanen-109328170" target="_blank"><img src="./images/linkedin2.png" class="hero-links" alt="LinkedIn"></a>
+                    <a href="https://github.com/yesssiu" target="_blank"><img src="./images/github2.png" class="hero-links" alt="GitHub profile"></a>
                 </div>
 
             </div>
@@ -126,7 +134,7 @@
             </div>
             <div class="projects-content">
                 <div class="project" id="first-left">
-                    <img src="./images/thinglink_img.png" class="projects-img">
+                    <img src="./images/thinglink_img.png" class="projects-img" alt="VR2 ThingLink -projektin kuva">
                 </div>
                 <div class="project" id="first-right">
                     <h2>VR2 ThingLink</h2>
@@ -137,7 +145,10 @@
                     <p>
                         <b>Avainsanat:</b> Projektinhallinta, JavaScript, Node.js 
                     </p>
-                    <a href="https://www.turkuamk.fi/fi/tutkimus-kehitys-ja-innovaatiot/hae-projekteja/ismo-intelligent-and-sustainable-stormwater-manage/" class="button-62" role="button">lue lisää</a>
+                    <a href="https://www.turkuamk.fi/fi/tutkimus-kehitys-ja-innovaatiot/hae-projekteja/ismo-intelligent-and-sustainable-stormwater-manage/" class="button-62" role="button" target="_blank">lue lisää</a>
+                </div>
+                <div class="project" id="second-right">
+                    <img src="./images/digio_image2.png" alt="Digio-projectin kuva" class="projects-img">
                 </div>
                 <div class="project" id="second-left">
                     <h2>Digio-projekti</h2>
@@ -148,13 +159,10 @@
                     <p>
                         <b>Avainsanat:</b> WordPress, Figma
                     </p>
-                    <a href="https://digio-projekti.fi" class="button-62" role="button">sivut</a>
-                </div>
-                <div class="project" id="second-right">
-                    <img src="./images/digio_image2.png" class="projects-img">
+                    <a href="https://digio-projekti.fi" class="button-62" role="button" target="_blank">sivut</a>
                 </div>
                 <div class="project" id="third-left">
-                    <img src="./images/ismo_img.png" class="projects-img">
+                    <img src="./images/ismo_img.png" class="projects-img" alt="ISMO-projektin kuva">
                 </div>
                 <div class="project" id="third-right">
                     <h2>ISMO-projekti</h2>
@@ -165,7 +173,7 @@
                     <p>
                         <b>Avainsanat:</b> Linux, Python, JavaScript, Node.js, HTML, CSS, PostgreSQL, InfluxDB, Grafana, Telegraf
                     </p>
-                    <a href="https://www.turkuamk.fi/fi/tutkimus-kehitys-ja-innovaatiot/hae-projekteja/ismo-intelligent-and-sustainable-stormwater-manage/" class="button-62" role="button">lue lisää</a></button>
+                    <a href="https://www.turkuamk.fi/fi/tutkimus-kehitys-ja-innovaatiot/hae-projekteja/ismo-intelligent-and-sustainable-stormwater-manage/" class="button-62" role="button" target="_blank">lue lisää</a></button>
                 </div>
             </div>
         </div>
@@ -194,7 +202,7 @@
                                 <textarea name="message" id="message" placeholder="Viesti tähän..." required></textarea>
                             </div>
                             <div class="submit">
-                                <button type="submit">Lähetä</button>
+                                <button class="button-62" type="submit">Lähetä</button>
                             </div>
                         </form>
                         <div id="status"></div>
@@ -222,6 +230,8 @@
     })();
     </script>
     <script src="/scripts/email.js"></script>
+
+    
 
 </body>
 
