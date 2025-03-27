@@ -15,25 +15,22 @@
 
 <body>
     <header class="sticky-header">
-        <div>
+        <div class="nav-container">
+            <button class="hamburger" id="menu-toggle" aria-label="Toggle menu">
+                ☰
+            </button>
             <nav>
-                <ul id="nav-list">
-                    <li><a href="#hero" class="nav-links">Etusivu</a></li>
-                    <li><a href="#about" class="nav-links">Minusta</a></li>
-                    <li><a href="#skills" class="nav-links">Työkalut</a></li>
-                    <li><a href="#projects" class="nav-links">Projektit</a></li>
-                    <li><a href="#contact" class="nav-links">Ota yhteyttä!</a></li>
+                <ul id="nav-list" class="nav-links">
+                    <li><a href="#hero" class="nav-item">Etusivu</a></li>
+                    <li><a href="#about" class="nav-item">Minusta</a></li>
+                    <li><a href="#skills" class="nav-item">Työkalut</a></li>
+                    <li><a href="#projects" class="nav-item">Projektit</a></li>
+                    <li><a href="#contact" class="nav-item">Ota yhteyttä!</a></li>
                 </ul>
-                <!-- Burger Menu Icon -->
-                <div id="burger-menu" class="burger-menu">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
             </nav>
         </div>
-    
     </header>
+    
 
     <section id="hero">
         <div class="hero-img">
@@ -44,7 +41,7 @@
                     <div class="hero-link">
                         <a href="https://www.linkedin.com/in/jessica-laamanen-109328170" target="_blank"><img src="./images/linkedin2.png" class="link-logo" alt="LinkedIn"></a>
                     </div>
-                    <div class="hero link">
+                    <div class="hero-link">
                         <a href="https://github.com/yesssiu" target="_blank"><img src="./images/github2.png" class="link-logo" alt="GitHub profile"></a>
                     </div>
                 </div>
@@ -172,6 +169,8 @@
                     </p>
                     <a href="https://ismo.turkuamk.fi/ismo/" class="button-62" role="button" target="_blank">lue lisää</a></button>
                 </div>
+
+                <p>Pääset lukemaan projekteistani lisää LinkedInissä!</p>
             </div>
         </div>
     </section>
@@ -227,6 +226,12 @@
     })();
     </script>
     <script src="/scripts/email.js"></script>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            document.getElementById("nav-list").classList.toggle("active");
+        });
+        
+    </script>
 
     
 
